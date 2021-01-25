@@ -48,6 +48,7 @@ import javax.net.ssl.SSLException
 class GetRemoteStatusOperation : RemoteOperation<OwnCloudVersion>() {
     private lateinit var latestResult: RemoteOperationResult<OwnCloudVersion>
 
+    
     override fun run(client: OwnCloudClient): RemoteOperationResult<OwnCloudVersion> {
 
         val baseUriStr = client.baseUri.toString()
